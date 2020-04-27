@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#97D5CC</item>
+        <item name="colorPrimaryDark">#8AC6BD</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="DecimalButton">
+        <item name="android:textColor">@color/buttonDecimalText</item>
+        <item name="android:background">@color/buttonDecimalBackground</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+    </style>
+
+</resources>

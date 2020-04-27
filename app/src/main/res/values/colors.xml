@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6F7D6D</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="buttonDecimalBackground">#26000000</color>
+    <color name="buttonDecimalText">#00C8D2</color>
+    <color name="menuListBack">#1E1E1E</color>
+    <color name="menuListText">#F9A825</color>
+    <color name="expression">#D3DAE0</color>
+    <color name="result">#FF8F00</color>
+    <color name="dialogBackground">#804B4B4B</color>
+    <color name="dialogText">#80FFBF00</color>
+</resources>

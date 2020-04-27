@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/inputFive"
+                    style="@style/DecimalButton"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/inputFive"
+                    app:layout_constraintBottom_toTopOf="@+id/inputTwo"
+                    app:layout_constraintEnd_toStartOf="@+id/inputSix"
+                    app:layout_constraintStart_toEndOf="@+id/inputFour" />
+
+                <Button
+                    android:id="@+id/inputDivision"
+                    style="@style/DecimalButton"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/inputDivision"
+                    app:layout_constraintBottom_toTopOf="@+id/inputMultiplication"
+                    app:layout_constraintEnd_toStartOf="@+id/inputModular"
+                    app:layout_constraintStart_toEndOf="@+id/inputNine" />
+
+                <Button
+                    android:id="@+id/inputZero"
+                    style="@style/DecimalButton"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/inputZero"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/decimalPoint"
+                    app:layout_constraintStart_toEndOf="@+id/cancel" />
+
+                <Button
+                    android:id="@+id/inputThree"
+                    style="@style/DecimalButton"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/inputThree"
+                    app:layout_constraintBottom_toTopOf="@+id/decimalPoint"
+                    app:layout_constraintEnd_toStartOf="@+id/inputMinus"
+                    app:layout_constraintStart_toEndOf="@+id/inputTwo" />
+
+                <Button
+                    android:id="@+id/inputSix"
+                    style="@style/DecimalButton"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/inputSix"
+                    app:layout_constraintBottom_toTopOf="@+id/inputThree"
+                    app:layout_constraintEnd_toStartOf="@+id/inputMultiplication"
+                    app:layout_constraintStart_toEndOf="@+id/inputFive" />
+
+                <Button
+                    android:id="@+id/inputFour"
+                    style="@style/DecimalButton"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/inputFour"
+                    app:layout_constraintBottom_toTopOf="@+id/inputOne"
+                    app:layout_constraintEnd_toStartOf="@+id/inputFive"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <Button
+                    android:id="@+id/cancel"
+                    style="@style/DecimalButton"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/cancel"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/inputZero"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <Button
+                    android:id="@+id/decimalPoint"
+                    style="@style/DecimalButton"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/decimalPoint"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/inputPlus"
+                    app:layout_constraintStart_toEndOf="@+id/inputZero" />
+
+                <Button
+                    android:id="@+id/inputPlus"
+                    style="@style/DecimalButton"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/inputPlus"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/cal"
+                    app:layout_constraintStart_toEndOf="@+id/decimalPoint" />
+
+                <Button
+                    android:id="@+id/inputModular"
+                    style="@style/DecimalButton"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/inputModular"
+                    android:textAllCaps="false"
+                    app:layout_constraintBottom_toTopOf="@+id/inputCombination"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/inputDivision" />
+
+                <Button
+                    android:id="@+id/cal"
+                    style="@style/DecimalButton"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/Cal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/inputPlus" />
+
+                <Button
+                    android:id="@+id/inputTwo"
+                    style="@style/DecimalButton"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/inputTwo"
+                    app:layout_constraintBottom_toTopOf="@+id/inputZero"
+                    app:layout_constraintEnd_toStartOf="@+id/inputThree"
+                    app:layout_constraintStart_toEndOf="@+id/inputOne" />
+
+                <Button
+                    android:id="@+id/inputOne"
+                    style="@style/DecimalButton"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@color/buttonDecimalBackground"
+                    android:text="@string/inputOne"
+                    android:textColor="@color/buttonDecimalText"
+                    android:textSize="30sp"
+                    app:layout_constraintBottom_toTopOf="@+id/cancel"
+                    app:layout_constraintEnd_toStartOf="@+id/inputTwo"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <Button
+                    android:id="@+id/changeType"
+                    style="@style/DecimalButton"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/changeIntFloat"
+                    android:textAllCaps="false"
+                    app:layout_constraintBottom_toTopOf="@+id/cal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/inputMinus" />
+
+                <Button
+                    android:id="@+id/inputMinus"
+                    style="@style/DecimalButton"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/inputMinus"
+                    app:layout_constraintBottom_toTopOf="@+id/inputPlus"
+                    app:layout_constraintEnd_toStartOf="@+id/changeType"
+                    app:layout_constraintStart_toEndOf="@+id/inputThree" />
+
+                <Button
+                    android:id="@+id/inputEight"
+                    style="@style/DecimalButton"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/inputEight"
+                    app:layout_constraintBottom_toTopOf="@+id/inputFive"
+                    app:layout_constraintEnd_toStartOf="@+id/inputNine"
+                    app:layout_constraintStart_toEndOf="@+id/inputSeven" />
+
+                <Button
+                    android:id="@+id/inputSeven"
+                    style="@style/DecimalButton"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/inputSeven"
+                    app:layout_constraintBottom_toTopOf="@+id/inputFour"
+                    app:layout_constraintEnd_toStartOf="@+id/inputEight"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <Button
+                    android:id="@+id/inputCombination"
+                    style="@style/DecimalButton"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/inputCombination"
+                    android:textAllCaps="false"
+                    app:layout_constraintBottom_toTopOf="@+id/changeType"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/inputMultiplication" />
+
+                <Button
+                    android:id="@+id/inputMultiplication"
+                    style="@style/DecimalButton"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/inputMultiplication"
+                    app:layout_constraintBottom_toTopOf="@+id/inputMinus"
+                    app:layout_constraintEnd_toStartOf="@+id/inputCombination"
+                    app:layout_constraintStart_toEndOf="@+id/inputSix" />
+
+                <Button
+                    android:id="@+id/inputNine"
+                    style="@style/DecimalButton"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/inputNine"
+                    app:layout_constraintBottom_toTopOf="@+id/inputSix"
+                    app:layout_constraintEnd_toStartOf="@+id/inputDivision"
+                    app:layout_constraintStart_toEndOf="@+id/inputEight" />
+
+                <Button
+                    android:id="@+id/inputOpenParentheses"
+                    style="@style/DecimalButton"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginBottom="24dp"
+                    android:text="@string/inputOpenParentheses"
+                    app:layout_constraintBottom_toTopOf="@+id/inputSeven"
+                    app:layout_constraintEnd_toStartOf="@+id/inputCloseParentheses"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <Button
+                    android:id="@+id/inputCloseParentheses"
+                    style="@style/DecimalButton"
+                    android:layout_marginBottom="24dp"
+                    android:text="@string/inputCloseParentheses"
+                    app:layout_constraintBottom_toTopOf="@+id/inputEight"
+                    app:layout_constraintEnd_toStartOf="@+id/inputFactorial"
+                    app:layout_constraintStart_toEndOf="@+id/inputOpenParentheses" />
+
+                <Button
+                    android:id="@+id/inputFactorial"
+                    style="@style/DecimalButton"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="24dp"
+                    android:text="@string/inputFactorial"
+                    app:layout_constraintBottom_toTopOf="@+id/inputNine"
+                    app:layout_constraintEnd_toStartOf="@+id/inputLeftShift"
+                    app:layout_constraintStart_toEndOf="@+id/inputCloseParentheses" />
+
+                <Button
+                    android:id="@+id/inputRightShift"
+                    style="@style/DecimalButton"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="24dp"
+                    android:text="@string/inputRightShift"
+                    app:layout_constraintBottom_toTopOf="@+id/inputModular"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/inputLeftShift" />
+
+                <Button
+                    android:id="@+id/inputLeftShift"
+                    style="@style/DecimalButton"
+                    android:layout_marginBottom="24dp"
+                    android:text="@string/inputLeftShift"
+                    app:layout_constraintBottom_toTopOf="@+id/inputDivision"
+                    app:layout_constraintEnd_toStartOf="@+id/inputRightShift"
+                    app:layout_constraintStart_toEndOf="@+id/inputFactorial" />
+
+                <Button
+                    android:id="@+id/inputSquared"
+                    style="@style/DecimalButton"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/inputSquared"
+                    app:layout_constraintBottom_toTopOf="@+id/inputOpenParentheses"
+                    app:layout_constraintEnd_toStartOf="@+id/inputLogarithm"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <Button
+                    android:id="@+id/inputLogarithm"
+                    style="@style/DecimalButton"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/inputLogarithm"
+                    android:textAllCaps="false"
+                    app:layout_constraintBottom_toTopOf="@+id/inputCloseParentheses"
+                    app:layout_constraintEnd_toStartOf="@+id/inputGreatestCommonDiviser"
+                    app:layout_constraintStart_toEndOf="@+id/inputSquared" />
+
+                <Button
+                    android:id="@+id/inputGreatestCommonDiviser"
+                    style="@style/DecimalButton"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/inputGreatestCommonDiviser"
+                    android:textAllCaps="false"
+                    app:layout_constraintBottom_toTopOf="@+id/inputFactorial"
+                    app:layout_constraintEnd_toStartOf="@+id/inputBitAnd"
+                    app:layout_constraintStart_toEndOf="@+id/inputLogarithm" />
+
+                <Button
+                    android:id="@+id/inputBitAnd"
+                    style="@style/DecimalButton"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/inputBitAnd"
+                    android:textAllCaps="false"
+                    app:layout_constraintBottom_toTopOf="@+id/inputLeftShift"
+                    app:layout_constraintEnd_toStartOf="@+id/inputBitOr"
+                    app:layout_constraintStart_toEndOf="@+id/inputGreatestCommonDiviser" />
+
+                <Button
+                    android:id="@+id/inputBitOr"
+                    style="@style/DecimalButton"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/inputBitOr"
+                    android:textAllCaps="false"
+                    app:layout_constraintBottom_toTopOf="@+id/inputRightShift"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/inputBitAnd" />
+
+                <Button
+                    android:id="@+id/inputBitNot"
+                    style="@style/DecimalButton"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/inputBitNot"
+                    android:textAllCaps="false"
+                    app:layout_constraintBottom_toTopOf="@+id/inputBitAnd"
+                    app:layout_constraintEnd_toStartOf="@+id/inputBitXor"
+                    app:layout_constraintStart_toEndOf="@+id/variable" />
+
+                <Button
+                    android:id="@+id/inputBitXor"
+                    style="@style/DecimalButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/inputBitXor"
+                    android:textAllCaps="false"
+                    app:layout_constraintBottom_toTopOf="@+id/inputBitOr"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/inputBitNot" />
+
+                <Button
+                    android:id="@+id/variable"
+                    style="@style/DecimalButton"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/Variable"
+                    android:textAllCaps="false"
+                    app:layout_constraintBottom_toTopOf="@+id/inputGreatestCommonDiviser"
+                    app:layout_constraintEnd_toStartOf="@+id/inputBitNot"
+                    app:layout_constraintStart_toEndOf="@+id/extend" />
+
+                <Button
+                    android:id="@+id/extend"
+                    style="@style/DecimalButton"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/Extend"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toTopOf="@+id/inputLogarithm"
+                    app:layout_constraintEnd_toStartOf="@+id/variable"
+                    app:layout_constraintStart_toEndOf="@+id/allClear" />
+
+                <Button
+                    android:id="@+id/allClear"
+                    style="@style/DecimalButton"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/allClear"
+                    app:layout_constraintBottom_toTopOf="@+id/inputSquared"
+                    app:layout_constraintEnd_toStartOf="@+id/extend"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/expressionLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    app:layout_constraintBottom_toTopOf="@+id/variable"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <EditText
+                        android:id="@+id/expressionText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:cursorVisible="true"
+                        android:ems="10"
+                        android:inputType="textNoSuggestions"
+                        android:linksClickable="false"
+                        android:longClickable="false"
+                        android:textColor="@color/expression"
+                        android:textIsSelectable="false"
+                        android:textSize="30sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/resultText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/result"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
