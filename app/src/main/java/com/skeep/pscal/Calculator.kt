@@ -417,11 +417,11 @@ class Calculator : Fragment(), View.OnClickListener {
     ): View? {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_calculator, container, false)
         calVar = Bundle(5)
-        calVar.putDouble("x",0.0)
-        calVar.putDouble("y",0.0)
-        calVar.putDouble("z",0.0)
-        calVar.putDouble("n",0.0)
-        calVar.putDouble("m",0.0)
+        calVar.putDouble("X",0.0)
+        calVar.putDouble("Y",0.0)
+        calVar.putDouble("Z",0.0)
+        calVar.putDouble("N",0.0)
+        calVar.putDouble("M",0.0)
         //hide SoftKeyboard and long click disable
         setExpressionText()
         //setButtonClickListeners

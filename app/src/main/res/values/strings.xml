@@ -48,4 +48,5 @@
     <string name="val_Z"><![CDATA["Z -> "]]></string>
     <string name="val_N"><![CDATA["N -> "]]></string>
     <string name="val_M"><![CDATA["M -> "]]></string>
+    <string name="emptyString" />
 </resources>
